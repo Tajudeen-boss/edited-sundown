@@ -1,0 +1,115 @@
+@font-face {
+    font-family: vau-light;
+    src: url(assets/fonts/NeueHaasDisplay-light.ttf);
+}
+
+@font-face {
+    font-family: vau-bold;
+    src: url(assets/fonts/NeueHaasDisplayBoldItalic.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', sans-serif; /* Change to a commonly available font */
+    box-sizing: border-box;
+    background-color: #F4F2ED; /* Adjusted background color */
+}
+
+/* ================= NavBar Start ================ */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw;
+}
+
+#logo {
+    cursor: pointer;
+}
+
+#nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    font-size: 1.2rem;
+}
+
+#nav-links h4 {
+    border: 1px solid rgba(11, 5, 0, .2);
+    padding: 0.625em 1.5em;
+    border-radius: 100vw;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all .5s ease;
+}
+
+#nav-links h4::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: black;
+    bottom: -100%;
+    left: 0;
+    transition: all .5s ease;
+}
+
+#nav-links h4:hover::after {
+    bottom: 0;
+}
+
+#nav-links a {
+    text-decoration: none;
+    color: #0b0500;
+}
+
+#nav-links h4:hover a {
+    color: #fff;
+    position: relative;
+    z-index: 9;
+    background-color: transparent;
+}
+/* ================= NavBar End ================ */
+
+/* ================= Hero Start ================ */
+#hero {
+    position: relative;
+    overflow: hidden;
+}
+
+#hero-content {
+    min-height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 3rem 1.5rem;
+    border-bottom: 1px solid #0b0500;
+}
+
+#hero #left {
+    width: 30vw; /* Increased width */
+    font-size: 3vh; /* Decreased font size */
+    color: #0b0500;
+    text-align: center;
+    font-family: vau-light;
+}
+
+#hero #right {
+    font-size: 8vh; /* Decreased font size */
+    text-align: right;
+    font-family: vau-bold;
+    font-weight: 900;
+    line-height: 15vh; /* Adjusted line height */
+}
+
+video {
+    width: 100%;
+    border-radius: 10px; /* Decreased border radius */
+    margin-top: 2vw; /* Adjusted margin-top */
+}
+/* ================= Hero End ================ */
